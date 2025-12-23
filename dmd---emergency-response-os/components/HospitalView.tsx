@@ -1,4 +1,6 @@
 
+import ctImage from './ct.jpg';   
+import mriImage from './mri.jpg'; 
 import React, { useState, useEffect, useMemo } from 'react';
 import { VitalSign, ChartType } from '../types';
 import ChartWidget from './ChartWidget';
@@ -59,14 +61,14 @@ const HospitalView: React.FC<HospitalViewProps> = ({
   const pacsImages = useMemo(() => [
     { 
       id: 1, 
-      name: 'Brain CT (Hematoma)', 
-      url: './components/ct.jpg', 
+      name: 'Body CT (Hematoma)', 
+      url: ctImage, 
       info: 'Slice: 14/64 | AXIAL | 2023-12-23 10:42:00'
     },
     { 
       id: 2, 
       name: 'Brain MRI (Tumor)', 
-      url: './components/mri.jpg', 
+      url: mriImage, 
       info: 'Sequence: T2 | SAGITTAL | 2023-12-23 10:55:10'
     }
   ], []);
