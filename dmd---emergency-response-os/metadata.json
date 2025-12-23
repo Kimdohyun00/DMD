@@ -1,0 +1,7 @@
+{
+  "name": "dmd - Emergency Response OS",
+  "description": "A dual-view medical dashboard for paramedics and hospital staff, featuring real-time vitals and AI-assisted clinical decision support.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
